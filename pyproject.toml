@@ -1,0 +1,19 @@
+[project]
+name = "strava-weather-pipeline"
+version = "0.1.0"
+description = "Data pipeline that integrates Strava and weather data using a medallion architecture."
+authors = ["David Wong"]
+readme = "README.md"
+requires-python = ">=3.10"
+
+dependencies = [
+    "requests",
+    "python-dotenv"
+]
+
+[tool.setuptools]
+packages = ["scripts"]
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
